@@ -1,0 +1,80 @@
+\documentclass[12pt,reqno,a4paper,oneside]{article}
+\usepackage{amsmath}
+\usepackage[includeheadfoot,bmargin=1.2cm,tmargin=1.2cm,lmargin=2cm, rmargin=2cm]{geometry}
+\usepackage[english]{babel}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{marvosym}
+\usepackage{tikz}
+\usepackage{mathtools}
+\usepackage[theorems, skins]{tcolorbox}
+\usepackage{mathrsfs}
+\usepackage{calligra}
+
+
+\DeclareMathOperator{\tr}{tr}
+\DeclareMathOperator{\dv}{div}
+\DeclareMathOperator{\osc}{osc}
+\DeclareMathOperator{\spt}{spt}
+\DeclareMathOperator{\sgn}{sgn}
+\DeclareMathOperator{\loc}{loc}
+\DeclareMathOperator{\pv}{pv}
+\DeclareMathOperator{\dist}{dist}
+\DeclareMathOperator{\diam}{diam}
+
+\tcbuselibrary{hooks}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\Z}{\mathbb{Z}}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\hf}{\hat{f}}
+\newcommand{\hg}{\hat{g}}
+\newcommand{\hphi}{\hat{\phi}}
+\newcommand{\SC}{\mathscr{S}}
+\newcommand{\OM}{\mathscr{O}}
+\newcommand{\D}{\mathscr{D}}
+\newcommand{\F}{\mathcal{F}}
+\newcommand{\G}{\mathcal{G}}
+\newcommand{\HM}{\mathcal{H}} %Hasudorff measure
+\newcommand{\B}{\mathcal{B}}
+\newcommand{\A}{\mathcal{A}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\PM}{\mathbb{P}}
+\newcommand{\FT}{\textsuperscript{$\wedge$}} %Fourier Transform
+\newcommand*{\bigchi}{\mbox{\Large$\chi$}} %Big chi
+
+\theoremstyle{definition}
+\newtcbtheorem[]%
+{ex}%
+{Ex}%
+{
+	enhanced, drop shadow southeast, before skip=10pt, after skip=10pt, interior style={color=black!10}, frame style={left color=blue!75!white, ,right color=cyan!70!black}}%
+{ex}
+
+\setlength{\headheight}{0pt}
+
+\begin{document}
+	
+	\selectlanguage{english}
+	\begin{center}
+		{\Large \fontencoding{T1} \calligra My Name
+			
+			Course Name
+			
+			\vspace{2mm}
+			
+			Exercise Set X}
+	\end{center}
+	
+	\begin{ex}{Weak derivative}{}
+		Find a weak derivative (and show that it is a weak derivative) of $f\colon \R \to \R$, $$f(x) = \begin{cases}
+			0, & x\leq 0,\\
+			\sqrt{x}, &x > 0.
+		\end{cases}$$
+	\end{ex}
+
+\end{document}

@@ -1,3 +1,5 @@
 CPP/
 Julia/
-LaTeX/
+*.aux
+*.log
+*.gz
